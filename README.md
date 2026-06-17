@@ -1,3 +1,17 @@
+## 국제 대학생 EV 자율주행 경진대회
+
+ROS2 기반 1/5 자율주행 차량에서 장애물 회피를 위한 DWA local planner와 path tracking controller를 구현한 프로젝트입니다.
+
+### Role
+
+전체 자율주행 시스템 중 경로 생성 및 경로 제어 파트를 담당했습니다.
+
+* DWA cost function 설계
+* 주행 환경에 따른 DWA parameter tuning
+* Pure Pursuit / Stanley controller 기반 조향 제어 및 parameter tuning
+* DWA local path와 path tracking controller 연동
+
+
 ## DWA Local Planner
 
 본 프로젝트에서는 차량 주변 장애물 상황을 반영하여 주행 가능한 local path를 선택하기 위해 DWA 기반 지역 경로 계획 알고리즘을 구현했습니다.
@@ -161,3 +175,7 @@ DWA 실행 중 오류가 발생하거나 선택된 경로가 충분하지 않은
 * `goal_point`: Pure Pursuit가 추종한 목표점
 
 즉, `path_tracking_dwa.py`는 DWA가 선택한 회피 경로를 실제 차량이 따라갈 수 있는 조향 명령으로 변환하는 핵심 연결부입니다.
+
+
+
+> 본 repository는 전체 ROS2 workspace가 아니라, 대회에서 담당했던 DWA local planner와 path tracking controller 핵심 코드만 정리한 것입니다.
