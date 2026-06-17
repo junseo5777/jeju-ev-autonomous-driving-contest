@@ -12,6 +12,7 @@ ROS2 기반 1/5 자율주행 차량에서 장애물 회피를 위한 DWA local p
 * DWA local path와 path tracking controller 연동
 
 
+
 ## DWA Local Planner
 
 본 프로젝트에서는 차량 주변 장애물 상황을 반영하여 주행 가능한 local path를 선택하기 위해 DWA 기반 지역 경로 계획 알고리즘을 구현했습니다.
